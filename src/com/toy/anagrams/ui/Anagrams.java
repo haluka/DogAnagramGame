@@ -103,6 +103,7 @@ public class Anagrams extends JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         mainPanel = new javax.swing.JPanel();
         scrambledLabel = new javax.swing.JLabel();
         scrambledWord = new javax.swing.JTextField();
@@ -114,6 +115,7 @@ public class Anagrams extends JFrame {
         nextTrial = new javax.swing.JButton();
         levelLabel = new javax.swing.JLabel();
         selectLevel = new javax.swing.JComboBox();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         mainMenu = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -220,6 +222,7 @@ public class Anagrams extends JFrame {
         mainPanel.add(selectLevel, gridBagConstraints);
 
         getContentPane().add(mainPanel, java.awt.BorderLayout.CENTER);
+        getContentPane().add(jTabbedPane1, java.awt.BorderLayout.PAGE_START);
 
         fileMenu.setMnemonic('F');
         fileMenu.setText("File");
@@ -286,6 +289,7 @@ public class Anagrams extends JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem aboutMenuItem;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JPanel buttonsPanel;
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JLabel feedbackLabel;
@@ -293,6 +297,7 @@ public class Anagrams extends JFrame {
     private javax.swing.JButton guessButton;
     private javax.swing.JLabel guessLabel;
     private javax.swing.JTextField guessedWord;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel levelLabel;
     private javax.swing.JMenuBar mainMenu;
     private javax.swing.JPanel mainPanel;
